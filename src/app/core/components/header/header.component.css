@@ -1,0 +1,44 @@
+.header {
+  background-image: url(../../../../assets/images/cabeceraAzul.png);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.header_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first_container {
+  display: flex;
+  justify-content: center;
+}
+
+.second_container {
+  display: flex;
+}
+
+.header_link {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #4B0082;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.header_link:hover {
+  color: #FF69B4;
+  cursor: pointer;
+}
+
+.home_link {
+  color: rgba(234, 68, 68, 0.93);
+  font-weight: bold;
+  font-size: 35px;
+}

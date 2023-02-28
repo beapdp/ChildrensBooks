@@ -1,0 +1,32 @@
+<div *ngIf="book">
+  <img src="{{book.cover}}" class="book-cover"> 
+  <div class="book-details">
+    <h2 class="book-title">{{ book.title }}</h2>
+    <p class="book-author">{{ book.author }}</p>
+    <p class="book-publication-year">{{ book.publication_year }}</p>
+    <p class="book-publisher">{{ book.publisher }}</p>
+    <p class="book-synopsis">{{ book.synopsis }}</p>
+    <audio controls>
+      <source src="#" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
+  </div>
+
+  <div class="reviews">
+    <h3>Opiniones de otros usuarios encontradas en Amazon:</h3>
+    <ul>
+      <li *ngFor="let review of reviews">
+        <p class="review-rating">Valoración: {{ review.rating }}</p>
+        <ul>
+          <li *ngFor="let reviewText of review.reviews">
+            <p class="review-text">{{ reviewText }}</p>
+          </li>
+        </ul>      
+      </li>
+    </ul>
+  </div>
+  
+  <a [routerLink]="['/book-list']">Volver al listado</a>
+</div>
+

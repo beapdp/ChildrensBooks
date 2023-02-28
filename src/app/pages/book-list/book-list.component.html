@@ -1,0 +1,15 @@
+<div class="bookList">
+    
+  <div>
+      <h2>¡Escoge un cuento!</h2>
+      <input type="text" [(ngModel)]="filterText" placeholder="Buscar por título">
+    </div>
+    
+    <div class="books_container">
+      <app-book
+        *ngFor="let bookItem of books | bookFilter:filterText"
+        [book]="bookItem">
+      </app-book>
+    </div>
+  </div>
+  

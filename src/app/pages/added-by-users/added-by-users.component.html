@@ -1,0 +1,20 @@
+<h2 class="section-title">Libros añadidos por usuarios</h2>
+<div class="book-list" *ngIf="addedBooks.length; else noBooks">
+  <ul>
+    <li *ngFor="let book of addedBooks" class="book-item">
+      <div class="book-details">
+        <h3 class="book-title">{{ book.title }}</h3>
+        <p class="book-author">Por {{ book.author }}</p>
+        <p class="book-published">Publicado en {{ book.publication_year }} por {{ book.publisher }}</p>
+        <p class="book-synopsis">Sinopsis: {{ book.synopsis }}</p>
+      </div>
+      <div class="book-cover">
+        <img [src]="book.cover" alt="Portada">
+      </div>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noBooks>
+  <p class="no-books-message">No hay libros añadidos por usuarios.</p>
+</ng-template>

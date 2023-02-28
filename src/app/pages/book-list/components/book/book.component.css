@@ -1,0 +1,42 @@
+
+  .book {
+    text-align: center;
+    margin: 30px;
+  }
+
+  .book_image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15%;
+  border: 1px solid rgb(15, 177, 186);
+}
+
+  .book_title {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 2px 2px rgba(255, 165, 0, 0.2);
+    color: rgb(40, 112, 123);
+  }
+  
+  
+  .book_button {
+    background-color: rgb(179, 249, 241);
+    color: rgb(8, 113, 192);
+    border: 2px solid rgb(44, 140, 249);
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  
+  .book_button:hover {
+    font-size: 20px;
+    box-shadow: 0 0 10px lightblue;
+  }
+  

@@ -1,0 +1,18 @@
+
+<div *ngIf = "book" class = "book">
+   
+    <img class="book_image" [src]="book.cover">
+    <p class="book_title">{{ book.title }}</p>
+    <div>
+        <button
+            class="book_button"
+            (click)="goToDetail()"
+        >Ir al cuento</button>
+    </div>
+
+</div>
+
+
+
+
+

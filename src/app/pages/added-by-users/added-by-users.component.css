@@ -1,0 +1,105 @@
+.book-list {
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.book-details {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.book-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+.book-author {
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+}
+
+.book-published {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+}
+
+.book-synopsis {
+  font-size: 16px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.book-cover img {
+  max-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.no-books-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #00a8e8; 
+}
+
+.book-title {
+  color: #f33b03;
+}
+
+
+.book-details p,
+.no-books-message {
+  color: #898bff;
+}
+
+
+@media (max-width: 768px) {
+  .book-item {
+    flex-direction: column;
+  }
+
+  .book-details {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .book-cover img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .book-title {
+    font-size: 24px;
+  }
+
+  .book-author,
+  .book-published,
+  .book-synopsis {
+    font-size: 14px;
+  }
+}

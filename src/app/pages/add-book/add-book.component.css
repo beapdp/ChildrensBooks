@@ -1,0 +1,66 @@
+h2 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff9933;
+    margin-bottom: 30px;
+  }
+
+  .div_container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  img {
+    width: 300px;
+    margin-right: 10%;
+  }
+  
+  form {
+    width: 50%;
+    background-color: #eaeaea;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff9933;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px #888888;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    background-color: #ff9933;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #e68a00;
+  }
+
+  .newImage_container{
+    width: 200px;
+    height: 200;
+  }
+  
